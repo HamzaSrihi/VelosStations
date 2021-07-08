@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_large"
+    tools:context=".ui.stations.details.DetailFragment">
+
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/name_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/name_label"
+        app:layout_constraintTop_toTopOf="@id/name_label"
+        tools:text="458" />
+
+    <View
+        android:id="@+id/separator_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@id/name_label"
+        app:layout_constraintTop_toBottomOf="@id/name_label" />
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/adress_label"
+        app:layout_constraintStart_toStartOf="@id/separator_view"
+        app:layout_constraintTop_toBottomOf="@id/separator_view" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/address_label"
+        app:layout_constraintTop_toTopOf="@id/separator_view"
+        tools:text="9087-MAZARGUES" />
+
+    <View
+        android:id="@+id/separator2_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@id/address_label"
+        app:layout_constraintTop_toBottomOf="@id/address_label" />
+
+    <TextView
+        android:id="@+id/bike_stands_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/bike_stands_label"
+        app:layout_constraintStart_toStartOf="@id/separator2_view"
+        app:layout_constraintTop_toBottomOf="@id/separator2_view" />
+
+    <TextView
+        android:id="@+id/bike_stands"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bike_stands_label"
+        app:layout_constraintTop_toTopOf="@id/separator2_view"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/available_bike_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/available_bike_label"
+        app:layout_constraintStart_toStartOf="@id/available_bike_label"
+        app:layout_constraintTop_toBottomOf="@id/bike_stands_label" />
+
+    <TextView
+        android:id="@+id/available_bikes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/available_bike_label"
+        app:layout_constraintTop_toTopOf="@id/available_bike_label"
+        tools:text="15" />
+
+    <TextView
+        android:id="@+id/available_bike_stands_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/available_bike_stands_label"
+        app:layout_constraintStart_toStartOf="@id/available_bike_label"
+        app:layout_constraintTop_toBottomOf="@id/available_bike_label" />
+
+    <TextView
+        android:id="@+id/available_bike_stands"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/available_bike_stands_label"
+        app:layout_constraintTop_toTopOf="@id/available_bike_stands_label"
+        tools:text="5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
