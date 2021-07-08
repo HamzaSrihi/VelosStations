@@ -14,5 +14,6 @@ I have used
 TODO
 
 * Make a great design for the app
+* Add Room for local database
 * Add a Map to present the list
 * Get User location 
